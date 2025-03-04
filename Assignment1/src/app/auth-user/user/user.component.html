@@ -1,6 +1,22 @@
-<p>user works!</p>
 <div class="user-container">
-    <h2>Welcome to Your Dashboard</h2>
-    <p>Hi, User! You have successfully logged in.</p>
-    <button >Logout</button>
-  </div>
+  <h2>Users List</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *For="let user of users">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.role }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
